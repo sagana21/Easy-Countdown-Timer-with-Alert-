@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #5a8dee, #8e44dc);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+/* Navbar */
+nav {
+  width: 100%;
+  background: rgba(255,255,255,0.15);
+  padding: 15px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Card Style */
+.box {
+  background: rgba(255,255,255,0.15);
+  margin-top: 40px;
+  padding: 25px;
+  width: 280px;
+  border-radius: 12px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+h2 {
+  font-weight: 600;
+}
+
+input {
+  width: 150px;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Buttons */
+#startBtn {
+  background: #27d96e;
+}
+#pauseBtn {
+  background: #ffea3b;
+}
+#resetBtn {
+  background: #ff5c70;
+}
+
+.buttons button {
+  padding: 8px 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  margin: 10px 5px;
+}
+
+/* Timer Circle */
+.circle-wrap {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+svg {
+  transform: rotate(-90deg);
+}
+
+.bg {
+  fill: none;
+  stroke: #ffffff40;
+  stroke-width: 10;
+}
+
+.progress {
+  fill: none;
+  stroke: #ff4fd8;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  transition: stroke-dashoffset 0.5s linear;
+}
+
+#display {
+  position: absolute;
+  font-size: 38px;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Dancing Script", cursive;
+  color: #fff;
+}
